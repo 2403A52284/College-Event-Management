@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>College Event Management System</h1>
+    <p>Plan, Manage and Participate in College Events</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#addEvent">Add Event</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to Our College Events Portal</h2>
+    <p>Discover exciting events, register and showcase your talents!</p>
+    <a href="#events" class="btn">Explore Events</a>
+</section>
+
+<section class="container" id="events">
+    <h2>Upcoming Events</h2>
+    <div id="eventList" class="event-grid"></div>
+</section>
+
+<section class="container" id="addEvent">
+    <h2>Add New Event</h2>
+
+    <form id="eventForm">
+        <input type="text" id="eventName"
+            placeholder="Event Name" required>
+
+        <input type="text" id="eventType"
+            placeholder="Event Category (Technical/Cultural)" required>
+
+        <input type="date" id="eventDate" required>
+
+        <input type="text" id="eventVenue"
+            placeholder="Event Venue" required>
+
+        <textarea id="eventDescription"
+            placeholder="Event Description" required></textarea>
+        <button type="submit">Add Event</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 College Event Management System | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
